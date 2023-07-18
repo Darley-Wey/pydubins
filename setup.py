@@ -12,7 +12,7 @@ extensions = [
 
 def read(filename):
     path = os.path.join(os.path.dirname(__file__), filename)
-    contents = open(path).read()
+    contents = open(path, encoding='UTF-8').read()
     return contents
 
 
