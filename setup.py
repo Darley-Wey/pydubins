@@ -17,6 +17,7 @@ def read(filename):
 
 
 setup(
+    requires     = ["cython<=0.29"],
     name         = "dubins",
     version      = "1.1.0",
     description  = "Code to generate and manipulate dubins curves",
@@ -39,5 +40,5 @@ setup(
         'Operating System :: POSIX :: Linux',
         'Topic :: Scientific/Engineering :: Mathematics',
     ],
-    ext_modules  = cythonize(extensions, language_level="3"),
+    ext_modules  = cythonize(extensions),
 )
