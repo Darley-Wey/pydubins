@@ -39,5 +39,5 @@ setup(
         'Operating System :: POSIX :: Linux',
         'Topic :: Scientific/Engineering :: Mathematics',
     ],
-    ext_modules  = cythonize(extensions),
+    ext_modules  = cythonize(extensions, language_level="2"),
 )
